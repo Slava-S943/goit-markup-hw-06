@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +25,7 @@
     <header class="page-header">
       <div class="container">
         <nav class="page-nav">
-          <a href="./index.html" class="main-logo"
+          <a href="./index.html" class="main-logo header-logo"
             >Web<span class="logo-accent">Studio</span></a
           >
           <ul class="nav-list">
@@ -54,24 +54,37 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</address>
+          <div>Soc Link</div>
+        </div>
       </div>
     </header>
     <!-- #endregion header -->
 
     <main>
       <!-- #region Hero section -->
-      <section class="section-hero">
+      <!-- <section class="section-hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
       <!--  #endregion Hero section -->
 
       <!-- #region Values section -->
-      <section class="values">
+      <!-- <section class="values">
         <div class="container">
           <h2 class="values-title visually-hidden">Key Values</h2>
           <ul class="values-list">
@@ -125,17 +138,18 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- #endregion Values section -->
 
       <!-- #region Team section -->
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
                 src="./images/our-team/designer.jpg"
+                srcset="./images/our-team/designer@2x.jpg 2x"
                 width="264"
                 height="260"
                 alt="Product designer Mark Guerrero"
@@ -180,6 +194,7 @@
             <li class="team-item">
               <img
                 src="./images/our-team/developer.jpg"
+                srcset="./images/our-team/developer@2x.jpg 2x"
                 width="264"
                 height="260"
                 alt="Frontend developer Tom Ford"
@@ -224,6 +239,7 @@
             <li class="team-item">
               <img
                 src="./images/our-team/marketing.jpg"
+                srcset="./images/our-team/marketing@2x.jpg 2x"
                 width="264"
                 height="260"
                 alt="Marketer Camila Garcia"
@@ -267,7 +283,8 @@
 
             <li class="team-item">
               <img
-                src="./images/our-team/UI-designer.jpg"
+                src="./images/our-team/ui-designer.jpg"
+                srcset="./images/our-team/ui-designer@2x.jpg 2x"
                 width="264"
                 height="260"
                 alt="UI designer Daniel Wilson"
@@ -310,7 +327,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- #endregion Team section -->
 
       <!-- #region Portfolio section -->
@@ -446,7 +463,7 @@
     </main>
 
     <!-- #region Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-inner">
         <div class="footer-left">
           <a href="./index.html" class="footer-logo"
@@ -510,11 +527,11 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- #endregion Footer -->
 
     <!-- #region Footer subscribe form -->
-    <div class="backdrop" data-modal>
+    <!-- <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -595,9 +612,10 @@
           <button class="modal-submit-btn" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <!-- #endregion Footer subscribe form -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
