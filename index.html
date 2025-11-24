@@ -62,10 +62,65 @@
       </div>
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" data-menu-close>Close</button>
-          <nav class="mobile-menu-nav">Navigation</nav>
-          <address>Address</address>
-          <div>Soc Link</div>
+          <button class="mobile-menu-close" type="button" data-menu-close>
+            <svg class="modal-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li>
+                <a class="mobile-menu-link" href="./index.html">Studio</a>
+              </li>
+              <li><a class="mobile-menu-link" href="">Portfolio</a></li>
+              <li><a class="mobile-menu-link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-address">
+            <ul>
+              <li>
+                <a class="mobile-menu-phone" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu-email" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-menu-social">
+            <li>
+              <a class="social-link" href="#">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="#">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="#">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="#">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -73,14 +128,14 @@
 
     <main>
       <!-- #region Hero section -->
-      <!-- <section class="section-hero">
+      <section class="section-hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!--  #endregion Hero section -->
 
       <!-- #region Values section -->
@@ -331,7 +386,7 @@
       <!-- #endregion Team section -->
 
       <!-- #region Portfolio section -->
-      <section class="portfolio">
+      <!-- <section class="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -458,7 +513,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- #endregion Portfolio section -->
     </main>
 
